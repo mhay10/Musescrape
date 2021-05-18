@@ -2,3 +2,5 @@ node_modules/
 .vscode/
 pages/
 pdf/
+yarn-error.log
+yarn.lock
