@@ -1,0 +1,25 @@
+{
+  "name": "musescrape",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "node driver.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "fast-glob": "^3.2.5",
+    "nexe": "^4.0.0-beta.18",
+    "pdfkit": "^0.12.1",
+    "prompt-sync": "^4.2.0",
+    "sharp": "^0.28.2",
+    "webdriverio": "^7.5.7"
+  },
+  "devDependencies": {
+    "@types/prompt-sync": "^4.1.0",
+    "@types/sharp": "^0.28.1",
+    "@wdio/cli": "^7.5.7",
+    "@wdio/sync": "^7.5.7"
+  }
+}
