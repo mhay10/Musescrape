@@ -1,7 +1,7 @@
 import { createRequire } from "module";
 import { remote } from "webdriverio";
-import { download_pages } from "./download.mjs";
-import { convert_to_png, pngs_to_pdf, remove_svg_files } from "./convert.mjs";
+import { download_pages } from "./download.js";
+import { convert_to_png, pngs_to_pdf, remove_svg_files } from "./convert.js";
 import fg from "fast-glob";
 
 const require = createRequire(import.meta.url);
