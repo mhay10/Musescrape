@@ -44,7 +44,6 @@ remote({
 		sleep(500);
 
 		const svg_files = await fg("./pages/*.svg");
-		console.log(svg_files);
 		if (svg_files.length > 0) {
 			svg_files.forEach((image_file) => {
 				console.log(`Converting ${image_file} to PNG file`);
@@ -65,6 +64,7 @@ remote({
 		}
 
 		driver.deleteSession();
+		process.exit();
 	}).catch((err) => {
 		throw err;
 	})
