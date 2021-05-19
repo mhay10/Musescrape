@@ -1,6 +1,8 @@
 # Musescrape
 Downloads PDF of sheet music from https://musescore.com for free.
 
+### IMPORTANT: You must have Google Chrome installed on machine for program to work
+
 ### Installing dependencies
 To install the necessary dependencies, use either of the following commands:\
 `npm install`\
