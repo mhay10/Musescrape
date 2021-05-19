@@ -25,7 +25,7 @@ export const download_pages = (page_urls, output_dir) => {
 	return page_urls.map(async (url, i) => {
 		const filetype = url.includes(".svg") ? "svg" : "png";
 
-		const res = await axios.get(url);
+		const res = await axios.get(url, { responseType: "arraybuffer" });
 		console.log(`Downloading page ${i + 1} of ${page_urls.length}`);
 		console.log(res.data);
 		const page = fs.createWriteStream(
