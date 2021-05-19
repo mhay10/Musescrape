@@ -15,3 +15,6 @@ To launch the program, use either of the following commands:\
 `yarn start`
 
 The individual pages will be stored in a folder called `pages` and the PDF will be stored in `pdf`.
+
+## TODO:
+- Make raw PNG download work
