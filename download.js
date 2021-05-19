@@ -27,6 +27,7 @@ export const download_pages = (page_urls, output_dir) => {
 
 		const res = await axios.get(url);
 		console.log(`Downloading page ${i + 1} of ${page_urls.length}`);
+		console.log(res.data);
 		const page = fs.createWriteStream(
 			`${output_dir}/page_${i + 1}.${filetype}`
 		);

@@ -31,20 +31,20 @@ remote({
 		driver.url(score_url);
 
 		let page_urls = [];
-		let pages = driver.$$('[class="vAVs3"]');
+		let pages = driver.$$('[class="vAVs3"]')
 		for (let page of pages) {
 			page.click();
 			sleep(1500);
 
 			let page_url = page.$('[class="_2_Ppp"]').getAttribute("src");
 			page_urls.push(page_url);
-		}
+		};
 
 		await Promise.all(download_pages(page_urls, "./pages"));
-
 		sleep(500);
 
 		const svg_files = await fg("./pages/*.svg");
+		console.log(svg_files);
 		if (svg_files.length > 0) {
 			svg_files.forEach((image_file) => {
 				console.log(`Converting ${image_file} to PNG file`);
