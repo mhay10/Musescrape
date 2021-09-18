@@ -1,6 +1,8 @@
 # Musescrape
 Downloads PDF of sheet music from https://musescore.com for free.
 
+## Note: I am too lazy to fix this bug but sometimes it fails. If it does, just run it again and seems to fix it.
+
 ### IMPORTANT: You must have Google Chrome installed on machine for program to work
 
 ### Installing dependencies
